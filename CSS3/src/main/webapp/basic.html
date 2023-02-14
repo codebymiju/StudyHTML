@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+	body {color: seagreen; 
+		  font-family:"D2-coding";
+		  line-height: 1.4;}
+	#int {color: green;}
+	
+	.sp {color: skyblue; 
+	     font-size: 1.5em;
+	     font-weight: bold;}
+	
+	.bg-ol {background-color: MediumAquaMarine; opacity: 0.6;}
+	
+	.cl-wh {color: white}
+	
+</style>
+</head>
+<body>
+	<h1>css basic</h1>
+	선택자 { 속성 : 속성값; }
+	
+	
+	<h2>CSS 선택자(Selector) 대표 3가지</h2>
+	<ul>
+		<li><span class="bg-ol cl-wh" >tag 선택자</span>
+		 - tag 그대로를 선택자로 활용. 강제, 자동 적용.</li>
+		<li><span class="bg-ol cl-wh">id 선택자</span> 
+		- tag에 id를 추가하고 <span class="sp">#id형태</span>로 활용.<br>
+		id값이 중복적용 불가하므로 해당 스타일 또한 중복적용 불가<br>
+		 주로 구조적인 목적에 쓰임</li>
+		<li><span class="bg-ol cl-wh">class 선택자</span> - tag에 class를 추가하고 
+		<span class="sp">.class형태</span>로 활용.<br>
+		class값은 중복적용 가능하므로 주로 디자인적인 목적에 쓰임.</li>
+	</ul>
+	
+	
+	<h2>css적용법 3가지</h2>
+	<ul>
+		<li id="ext">External CSS - 외부파일 방식<br>
+		스타일소스를 별도의 파일로 독립해 작성후 웹문서와 연결하여 적용.<br>
+		<div class="pre brdr-01"> 
+	&lt;웹문서의 head영역에&gt;
+	&lt;link href = "*.css" rel = "stylesheet"&gt;
+		</div>
+		통일성 있는 구성 가능, 유지보수 유리. (장점 많음)</li>
+		
+		<li id="int">Internal CSS - 내장 방식<br>
+		스타일소스를 웹문서의 head영역에 작성. 
+		<div class="pre brdr-01">
+	&lt;style type = "text/css"&gt;
+	선택자 {속성:속성값;} 
+	&lt;/ style &gt;
+		</div>
+		해당 웹문서에만 적용 됨.</li>
+		
+		<li style="color:red;">Inline CSS - 인라인 방식 <br>
+		스타일소스를 해당 태그 바로 뒤에 작성. 
+		<div class="pre brdr-01">
+	&lt;tag style = "속성:속성값;"&gt;
+		</div>
+		CSS의 장점이 없으나 세가지 방식 중 CSS적용 우선 순위가 가장 높고, <br>
+		body 부분만 수정 가능한 상황에서 활용.
+		</li>
+	</ul>
+</body>
+</html>

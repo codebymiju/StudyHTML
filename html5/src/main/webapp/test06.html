@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image</title>
+</head>
+<body>
+<h1>img로 Image넣기</h1>
+<p>&lt;img src="이미지경로" alt="대체텍스트"&gt; <br>
+ (대체텍스트는 시각장애인용 음성낭독기에서 읽어줄 이미지 설명문.<br>
+ 이미지가 나타나지 않는 상황에서의 설명으로도 적용 됨)</p>
+ 
+ <button>
+ <img alt="화살표" src="img/png/arrow-up.png" width="30"> img button
+ </button>
+
+<h2>img width/height속성으로 크기 조절 </h2>
+ <img alt="자유의 여신상" src="img/statue.jpg" width="640" height="427">
+ 	<!-- 원본 그대로지만 가로 세로 기입시 화면에 이미지 로딩 빠름 -->
+ <img alt="자유의 여신상" src="img/statue.jpg" width="400"> width="400"
+ <br>
+ <img alt="자유의 여신상" src="img/statue.jpg" height="400"> height="400"
+
+<h2>경로</h2>
+<ol>
+  <li>절대경로 - 항상 같은 주소<br>
+   <img src ="https://cdn.pixabay.com/photo/2022/08/18/20/18/red-maple-leaves-7395624__340.jpg">
+  </li>
+  <li>상대경로 - 웹문서의 위치에 따라 달라지는 상대적인 주소</li>
+</ol>
+
+
+
+<h2>web Image 대표 형식 3가지</h2>
+<ul>
+  <li>*.gif - 최대 256가지 색상만 표현.<br>
+  <img alt="face" src="img/gif/face.gif">
+   로고나 버튼, 아이콘 등 단순한 그림에 적합. 투명배경 지원. 움짤 가능.</li>
+  <li>*.jpg - 트루컬러 표현 가능. 실사 사진에 적합.<br>
+  <img alt="night" src="img/night.jpg"> </li>
+  <li>*.png - gif와 jpg형식의 장점을 결합
+  투명배경 지원. 트루컬러 표현 가능.<br>
+  <img alt="monster" src="img/png/monster.png">  </li>
+</ul>
+
+</body>
+</html>

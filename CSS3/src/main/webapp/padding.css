@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.pd {border: 1px solid; padding: 2.5em;}
+
+/* 1. padding의 방향별 지정 속성 */
+
+#pd-dr>li {border: 1px solid #090;}
+/* 그룹선택자 {} 
+.pt, .pr, .pb, .pl */
+.pt {padding-top: 1.5em;}
+.pr {padding-right: 20%; text-align: right;}
+.pb {padding-bottom: 1.2em;}
+.pl {padding-left: 50px;}
+
+/* 2. padding의 값 갯수별 지정법 */
+
+#pd-n>li {border: 1px dashed #008;}
+.pdn01 {padding: 50px;}
+.pdn02 {padding: 10px 5%;}
+.pdn03 {padding: 30px 15% 10px;}
+.pdn04 {padding: 3em 30% 1em 5%;}
+
+/* 3. input type="text"의 padding적용 */
+.p01 {padding: 0.5em;}
+.p02 {padding: 0.3em 0.7em;}
+.p03 {padding: 0.5em 1px 2em 3px;}
+
+/* 4. a의 padding 적용 */
+nav>a {border: 1px solid; 
+/* width: 50px; */
+padding: 5px 10px;
+text-decoration: none;
+color: #37f;}
+
+/* 마우스 올렸을때 변경 */
+nav>a:hover {
+	border-color:#920;
+	background-color: #000;
+	color: #fff;
+}
+
+/* 5. img의 padding 적용 */
+#imp>img {
+	width: 300px;
+	margin: 20px;
+}
+
+.imp01 {
+	border: 20px solid #234;
+	padding: 60px;
+}
+
+.imp02{
+	border:1px solid;
+	padding: 20px 20px 150px;
+}
+
+.imp03{
+	border:1px solid;
+	border-radius:5px;
+	padding: 30px 30px 180px;
+	box-shadow: 0px 2px 12px #333;
+/*영역의 그림자*/ }
+
+.imp03:hover{
+	box-shadow: 0px 0px 2px #888;
+	transition: 1s;
+}
+
+.imp04{
+	border:30px groove #248;
+	border-radius: 50%;
+	padding: 30px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+font-family:'Nanum Gothic', sans-serif;}
+/* font.css */
+/* 1. font-size 글자크기 */
+.fs01 {font-size: 16px;}
+.fs02 {font-size: 12px;}
+.fs03 {font-size: 20px;}
+
+#sec01 {font-size: 12px;}
+.fs04 {font-size: 1em;}
+.fs05 {font-size: 0.75em;}
+.fs06 {font-size: 1.25em;}
+
+.fs07 {font-size: 1rem;}
+.fs08 {font-size: 0.75rem;}
+.fs09 {font-size: 1.25rem;}
+
+/* 2. font-weight : 100 ~ 900 */
+.fw01 {font-weight:100;}
+.fw02 {font-weight:200;}
+.fw03 {font-weight:300;}
+.fw04 {font-weight:400;}
+.fw05 {font-weight:500;}
+.fw06 {font-weight:600;}
+.fw07 {font-weight:700;}
+.fw08 {font-weight:800;}
+.fw09 {font-weight:900;}
+.fw10 {font-weight:bold;}
+.fw11 {font-weight:normal; color:olive;
+  font-size:14px;}
+.fw12:hover {
+/* 상태선택자 A:hover는
+요소 A에 마우스오버 상태에서
+적용되는 선택자 */
+	font-weight:bold;}
+
+/* 3. font-style 글자 기울이기 */
+.fst01 {font-style:italic;}
+.fst02 {font-style:oblique;}
+.fst03:hover {font-style:normal;}
+
+/* 4. font-family: ; 글꼴(서체)  */
+.ffm01 {font-family:"verdana",
+"Helbetica","Arial", sans-serif;}
+.ffm02 {font-family:"Garamond", 
+"Georgia","Times New Roman", serif ;}
+.ffm03 {font-family:"Courier New", 
+"Monaco", cursive ;}
+.ffm04 {font-family:'Jua', sans-serif;}
+.ffm05 {font-family:'Noto Serif KR', serif;}
+.ffm06 {}
+
+/*
+https://fonts.google.com/knowledge
+font-family: 'Jua', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Serif KR', serif;
+*/

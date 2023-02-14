@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="style.css" rel="stylesheet">
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+	<h1>margin 요소의 외부 여백</h1>
+		<p class="mg">테두리(border)를 기준으로 바깥쪽으로 사방에 적용 됨.</p>	
+	<h2>1. margin의 방향별 지정 속성</h2>
+		<ul id="mg-dr">
+			<li class="mt">margin-top: 50px; 위에 50px만큼 적용</li>
+			<li class="mr">margin-right: 30%; 우측에 30%만큼 적용</li>
+			<li class="mb">margin-bottom: 2em; 아래에 2em만큼 적용</li>
+			<li class="ml">margin-left: 5%; 좌측에 5%만큼 적용</li>
+		</ul>
+		
+	<h2>2. margin의 값 갯수별 지정법</h2>
+		<ul id="mg-n">
+			<li class="mgn01">margin:30px; 양사방에 같은 값을 동시 적용</li>
+			<li class="mgn02">
+			margin:50px 70px; 상하 좌우 순서로 적용<br>
+			 항상 정중앙에 위치하는 요소<br>
+			<b>margin:n auto;</b><br>
+			(margin-left: auto;<br>
+			margin-left: auto;)
+			</li>
+			<li class="mgn03">margin:20px 100px 0; 상 좌우 하 순서로 적용</li>
+			<li class="mgn04">margin:0 20% 100px 3%; 상 우 하 좌 순서로 적용</li>
+		</ul>
+	
+	<h3>3. inline(a)의 margin 적용</h3>
+	<p class="bg">
+	 상하 margin 적용 불가,
+	 인접요소와의 좌우 margin은 이중으로 적용.
+	 (크기 적용 불가)
+	</p>
+		<nav>
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+			<a href="#">7</a>
+			<a href="#">8</a>
+			<a href="#">9</a>
+			<a href="#">10</a>
+		</nav>
+		
+</body>
+</html>

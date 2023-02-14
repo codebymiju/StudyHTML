@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.mg {
+	border: 1px solid;
+	margin: 50px;
+}
+
+/* 1. margin의 방향별 지정 속성 */
+#mg-dr>li {
+	border: 1px solid #b00;
+}
+
+.mt{margin-top: 50px;}
+.mr{margin-right: 30%;
+text-align: right;}
+.mb{margin-bottom: 2em;}
+.ml{margin-left: 5%;}
+
+/* 2. margin의 값 갯수별 지정법 */
+
+#mg-n>li {border: 1px solid #b00;}
+
+.mgn01 {margin: 30px;}
+.mgn02 {margin: 50px auto; /*수직, 수평*/
+width:50%;
+/* margin-left: auto; */
+/* margin-right:auto; */
+text-align: center;}
+
+.mgn02>b{
+	font-size: 1.1em;
+	color: #a80;
+}
+
+.mgn03 {margin: 20px 100px 0;}
+.mgn04 {margin: 0 20% 100px 3%;}
+
+
+/* 3. inline(a)의 margin 적용 */
+.bg {
+	background-color: #920;
+	white-space: pre;
+	color:#fff;
+}
+
+nav{
+/* 	border:1px solid; */
+	margin-top: 5em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+nav>a {
+	background-color: #000;
+	text-decoration: none;
+	margin:10px;
+	padding: 5px 10px;
+	color: #ff0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a로 링크걸기</title>
+</head>
+<body>
+	<nav>
+		<!-- nav는 메뉴영역을 의미 -->
+		<a href="test07.html">링크-1</a>
+		<a href="test08.html">링크-2</a>
+	</nav>
+
+
+	<h1>a로 링크걸기-1</h1>
+	<p>
+		 <b>&lt;a href="경로"&gt; ... &lt;/a&gt;</b><br>
+		 링크걸린 텍스트는 밑줄이 생기고 커서의 모양이 바뀌며<br>
+		 글자색이 변함(초기링크=파랑/활성화링크=빨강/방문한링크=보라)
+	</p>
+	<ol>
+		<li>절대경로로 링크걸기<br>
+		   <a href="https://pixabay.com/" target="_blank">https://pixabay.com/</a>
+		   <a href="https://www.daum.net/" target="_blank">다음</a>
+		</li>
+		<li>상대경로로 링크걸기</li>
+	</ol>
+	
+	<h2></h2>
+	<ul>
+		<li>URL 웹주소<br>
+		  <a href="http://www.naver.com" target="_blank">네이버</a>
+		</li>
+		<li>*.htm/*.html 웹페이지<br>
+		  <a href="test05.html">form</a><br>
+		  <a href="test06.html" title="Image 넣기">test06.html</a>
+		</li>
+		<li>*.gif/*.jpg/*.png 이미지파일<br>
+			<a href="img/ryanair.jpg" target="_blank">이미지01</a><br>
+			<a href="img/png/mail01.png" target="_blank" >이미지02</a>
+		</li>
+		<li>*.ogg/*.mp4/*.webm 동영상파일<br>
+		 	<a href="woman.mp4" target="_blank">동영상</a>
+		</li>
+		<li>*.txt 텍스트파일<br>
+		 	<a href="폼테스트용 텍스트.txt" target="_blank">텍스트 파일</a>
+		</li>
+	</ul>
+	<p> 웹브라우저가 처리 불가능한 종류를 링크 걸면 다운로드 됨.
+	    (압축파일, 한글문서 등)<br>
+	<a href="img.zip">img.zip</a>
+	</p>
+	
+	<h3 id="target">링크 target</h3>
+	<ul>
+	    <li>target="_self" (기본값) 현재 위치에 열림</li> 
+   	    <li><b>target="_blank" 새 탭</b>에 열림</li>
+   	    <li>target="_top" 프레임구조에서 나뉨없이 전체에 열림</li>
+   	    <li>target="_parent" (프레임구조에서) 상위창에 열림</li>
+	</ul>
+	
+	<h3>이미지에 링크 걸기(링크 걸린 이미지를 생성)</h3>
+		<a href="test06.html" target="_blank" title="이미지 수업 보기">
+		<img alt="sunset" src="img/sunset.jpg" width='250'></a><br>
+		&lt;tag title = "..." &gt; <br>
+		title속성은 특정태그의 설명을 넣어주는 툴팁(풍선도움말)을 지정 <br>
+	
+		<a href="http://www.daum.net" target="_blank" title="daum으로 이동">
+			<img alt="daum으로 이동하기" src="img/png/daum-logo.png" width="300">
+		</a>
+
+		<h3>이미지 맵(imagemap)</h3>
+		 <p>이미지의 특정부분에만 링크를 걸거나, 이미지 하나에 여러 곳의 링크를 걸 수 있다.</p>
+		 <pre>
+		 &lt;img usemap="#abc"&gt; --- 서로 
+		 &lt;map name="abc"&gt;    --- 일치
+		  &lt;area shape="rect" coords="x1,y1,x2,y2" href="주소값"&gt; 
+		  &lt;area shape="circle" coords="x1,y1,r" href="주소값"&gt;
+		  &lt;area shape="poly" coords="x1,y1,x2,y2,x3,y3,x4,y4,..." href="주소값"&gt;  
+		  
+		 (rect 사각형은 좌측상단의 좌표와 우측하단의 좌표
+		  circle 원형은 중심점의 좌표와 반지름
+		  poly 다각형은 시작점의 좌표와 시계방향 각 점의 좌표와 ... 마지막 점의 좌표)   
+		 &lt;/map&gt;
+		 </pre>
+		 
+		 <img alt="moon" src="img/moon.jpg" usemap="#imgmap01">
+		 <map name="imgmap01">
+		 	<area alt="daum go" shape="rect" coords="0,0,100,100" href="https://www.daum.net/">
+		 	<area alt="naver Go" shape="rect" coords="100,100,400,300" href="https://www.naver.com/"
+		 		target="_blank" title="naver Go">
+		 </map>
+	
+		<img alt="monster" src="img/png/monster.png" usemap="#imgmap02">
+		<map name="imgmap02" >
+			<area alt="test07.html로 이동" shape="circle" coords="260,285,16" 
+			 href="test07.html" target="_blank" title="test07.html로 이동"> 
+			<area alt="test05.html로 이동" shape="circle" coords="364,285,16"
+			 href="test05.html" target="_blank" title="test05.html로 이동">
+			<area alt="" shape="poly" coords="">
+		</map>
+		
+		<img alt="기쁜데 슬프다" src="img/광수.jpg" usemap="#imgmap03">
+		<map name="imgmap03">
+			<area alt="woman.mp4" shape="circle" coords="536,310,40"
+			href="woman.mp4" target="_blank" title="woman.mp4로 이동">
+		</map>
+		
+		<hr>
+		<h2>mailto:로 email링크 걸기</h2>
+		<p>
+		<a href="mailto:itwillmaster@itwill.co.kr">email</a><br>
+	
+		<a href="mailto:class@itwillbs.co.kr" title="email보내기">
+		<img alt ="메일 보내기" src="img/png/mail01.png" width="100">
+		</a>
+		</p>
+	
+		<hr>
+		
+		<h2>페이지 최상단으로 이동하는 top링크</h2>
+		 <a href="#">😎</a>
+</body>
+</html>

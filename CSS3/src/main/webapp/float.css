@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* 
+ * {margin: 0; padding: 0;
+   box-sizing: border-box;
+            요소의 크기 계산시 
+  padding과 border를 포함하도록 지정 }
+ 
+ */
+.clear {clear: both;}
+  
+  /* 1. 가로형 메뉴 - 좌측형 */
+#nv-lft {
+margin-bottom: 70px;
+overflow: hidden;}
+
+#nv-lft>ul {/* border: 1px solid red; */
+padding-left:0 /* 목록 앞의 기본 여백 제거 */;
+list-style: none /* 
+ 목록 앞의 기본 모양 제거 */;}
+#nv-lft li {/* border: 1px solid; */
+ float: left /* 가로형 메뉴 */;}
+ 
+#nv-lft a {width: 100px;height: 30px;
+display:block /* 크기 적용 위해 */;
+box-sizing: border-box;
+text-align: center; 
+line-height:30px /* 수직정렬 중앙으로 */;  }
+
+#nv-lft a:link, #nv-lft a:visited {
+border-left:6px solid #396;	
+background-color: #936;	
+color: #fff;
+text-decoration: none;}	
+
+#nv-lft a:hover, #nv-lft a:active {
+border-left:6px solid #693;	
+background-color: #396;	
+color: #fff;}
+
+
+
+  /* 2. 가로형 메뉴 - 우측형 */
+
+#nv-rgt>ul {border: 1px solid red;
+float: right /* 우측형 메뉴 */;
+list-style: none;
+padding-left: 0;}
+
+#nv-rgt li {border-right: 1px solid;
+float: left /* 가로형 메뉴 */;
+width: 100px; height: 30px;}
+
+#nv-rgt a {/* border: 1px solid; */
+width: 100px; height: 30px;
+display:block;
+text-decoration: none;
+text-align: center;
+line-height:30px; }
+
+#nv-rgt a:link, #nv-rgt a:visited {
+	background-color: #08e;
+	color: #024;} 
+
+#nv-rgt a:hover, #nv-rgt a:active {
+	background-color: #024;
+	color: #08e;} 
+
+ /* 3. 가로형 메뉴 - center형 */
+#nv-cnt {height:50px;
+background-color: #000;
+padding-top:10px; 
+box-sizing: border-box;}
+
+#nv-cnt>ul {/* border: 1px solid yellow; */
+width: 400px;
+overflow: hidden;
+margin: 0 auto; 
+padding: 0;
+list-style: none;}
+
+#nv-cnt li {/* border: 1px solid red; */
+float: left;
+width: 100px; height:30px;
+box-sizing: border-box;
+text-align: center;
+line-height:30px; }
+
+#nv-cnt a {
+width: 100px; height:30px;
+border-radius:14px 14px 0 0
+/* 좌측상단 시작으로 시계방향 각각 */;
+display: block;
+text-decoration: none; }
+
+#nv-cnt a:link, #nv-cnt a:visited {
+background-color: #49a;		
+color: #012;	}
+#nv-cnt a:hover, #nv-cnt a:active {
+background-color: #a49;		
+color: #320;		}
+
+ /* aside(border-radius) */
+#aside01 {
+background-color: #ddc;
+padding: 1em;
+display: none;}
+
+#nv-cnt:hover+#aside01 {
+display: block;}
+
+
+
+
+#sec01, #sec02 {
+ float: left; 
+ width: 42%
+/* 글자가 많을 경우 자동줄바꿈이
+ 안되어 나란히 배치안 됨-
+ 너비값을 직접 줄임 */;
+}
+
+#sec01 {overflow:hidden
+/* float으로 빠져나간 자식을
+ 감싸도록 */; }
+
+#sec01>p {
+border: 1px solid;}
+
+#sec01 img {
+ float: left;	
+ margin-right: 0.8em;}
+
+
+#sec02 {overflow: hidden;}
+
+#sec02>p {
+text-align: right;	
+}
+
+#sec02 img {
+float: right;
+margin-left: 0.8em;}
+
+
+
+#sec03 {
+clear: both
+/* float된 요소들의 영향으로
+밀고 올라온 다음요소를 제자리로 */;
+}
+
+#sec03 {overflow: hidden;}
+
+#sec03>p {
+border: 1px solid #089;
+width: 20%;
+float: left /* 나란히 왼쪽에 배치 */;
+margin-right: 1em;}
+
+#sec03>div {
+border: 1px solid #890;
+clear: both /* float의 영향을 해제시켜
+제자리로 */;}
+
+
+#sec04>p {
+border: 1px solid #809;
+width: 20%;
+float: right; }
+ 
+#sec04>div {
+border: 1px solid #098;
+clear: both;	}
+
+
+#sec05>p {padding: 1em;}
+
+.p09 {background-color: #f42;
+width: 30%;
+float: left;}
+
+.p10 {background-color: #24f;
+width: 20%;
+float: right;}
+
+.p11 {background-color: #7f4;
+clear: both;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

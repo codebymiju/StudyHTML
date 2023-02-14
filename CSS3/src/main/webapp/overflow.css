@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#ov>li {
+	border: 1px solid;
+	width: 500px;
+	height: 150px;
+	font-size: 1.2em;
+}
+
+.hd{
+	color: #f00;
+	overflow: hidden;
+}
+
+.sc{
+	color: #0f0;
+	overflow: scroll;
+}
+
+.at{
+	color: #00f;
+	overflow: auto;
+}
+
+#box {
+	border: 1px solid;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
+#box>.ph {
+	width: 640px;
+	height: 430px;
+	opacity: 0.5;
+}
+
+#box:hover>.ph {
+	width: 400px;
+	height: 300px;
+	opacity:1;
+	transition:1s;
+}
+
+.text {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+#box:hover>.text {
+	position: relative;
+	bottom: 300px;
+	left:130px;
+	color: #fff;
+}
+
+.el {
+	border: 1px solid;
+	width: 100px;
+	height: 22px;
+	white-space: nowrap;
+	/*영역에 맞춰 자동 줄바꿈
+	  되는 것을 금지 */
+	overflow: hidden;
+	/* 영역 밖의 내용 숨김 */
+	text-overflow: ellipsis;
+	/*
+	영역 밖의 글자는 
+	말줄임표로(...) 표시
+	*/
+}
+
+.el:hover {
+	width: 400px;
+	transition:2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

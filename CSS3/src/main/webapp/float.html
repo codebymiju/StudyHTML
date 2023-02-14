@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+<!-- 1. 가로형 메뉴 - 좌측형 -->
+<nav id="nv-lft">
+ <ul>
+  <li><a href="#sec01">sec01</a></li>
+  <li><a href="#sec03">sec03</a></li>
+  <li><a href="#sec04">sec04</a></li>
+  <li><a href="#sec05">sec05</a></li>
+ </ul>
+</nav>
+
+<!--  2. 가로형 메뉴 - 우측형  -->
+<nav id="nv-rgt">
+ <ul>
+  <li><a href="#sec01">sec01</a></li>
+  <li><a href="#sec03">sec03</a></li>
+  <li><a href="#sec04">sec04</a></li>
+  <li><a href="#sec05">sec05</a></li>
+ </ul>
+</nav>
+
+<h1 class="clear">float 부유하다</h1>
+<p>float 된 요소는 브라우저 위로 떠 
+좌나 우에 배치 됨</p>
+
+<!--  3. 가로형 메뉴 - center형 -->
+<nav id="nv-cnt">
+ <ul>
+  <li><a href="#sec01">sec01</a></li>
+  <li><a href="#sec03">sec03</a></li>
+  <li><a href="#sec04">sec04</a></li>
+  <li><a href="#sec05">sec05</a></li>
+ </ul>
+</nav>
+
+<aside id="aside01">
+ <h2>border-radius 모서리 라운딩</h2>  
+  <ul>
+   <li>border-radius:n; 양사방 n으로 동일</li>
+   <li>border-radius:n n; 
+   좌측상단과 우측하단이 첫번째, 
+   우측상단과 좌측하단이 두번째로 서로 동일</li>
+   <li>border-radius:n n n n;
+   좌측상단을 시작으로 시계방향으로 각각 모서리마다 적용</li>
+  </ul> 
+</aside>
+
+
+
+<section id="sec01">
+ <h2>img에 float:left; 적용</h2>
+
+ <p>
+  <img alt="statue" src="img/statue.jpg" height="200">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+</section>
+
+<section id="sec02">
+ <h2>img에  float:right; 적용</h2>
+
+ <p>
+  <img alt="statue" src="img/statue.jpg" height="200">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+</section>
+
+<section id="sec03">
+ <h2>p들에게  float:left; 적용</h2>
+
+ <p> [p-1] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+
+ <p> [p-2] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+ <p> [p-3] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+
+ <div>  
+  [div-4] 밀고 올라온 div를 <b>clear: both;</b>로 제자리로.. <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </div>
+
+</section>
+
+<h1>clear:left/right/both; 
+ float의 영향을 해제  </h1>
+<p>나란히 배치하려고 요소들에게 float을 하면
+ float의 영향으로 그 다음 요소가 위로 밀고 올라옴.<br>
+ 밀고 올라온 요소를 제자리로 보내려면 float의 영향을 해제하는
+ (끊어주는) clear를 적용해야 함.
+</p>
+
+<section id="sec04">
+ <h2>p들에게  float:right; 적용</h2>
+
+ <p> [p-5] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+
+ <p> [p-6] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+ <p> [p-7] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+
+ <div>  [div-8] 밀고 올라온 div를 <b>clear: both;</b>로 제자리로.. <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </div>
+
+</section>
+
+<section id="sec05">
+ <h2>p들에게 각각 float:left,right 적용</h2>
+
+ <p class="p09"> [p-9] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+ <p class="p10"> [p-10] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+ <p class="p11"> [p-11] <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			accumsan porta sapien, sit amet sagittis magna feugiat ut. Cras
+			imperdiet mauris quis tortor dapibus lobortis. Donec eleifend
+			scelerisque quam et auctor. Nunc venenatis ut augue at tincidunt.
+			Pellentesque nec lectus in metus tempus condimentum. Nunc sit amet
+			metus non erat iaculis feugiat sed sit amet ipsum. Nunc aliquet leo
+			ut placerat ornare. Phasellus eget molestie odio. Mauris velit
+			ligula, elementum ac fermentum nec, interdum non dolor. Sed blandit
+			lectus metus. Nam nisl diam, dictum vel tempor ut, pellentesque vel
+			tortor. Maecenas sagittis eros orci. Integer turpis odio, dapibus
+			vitae mattis sit amet, dictum nec lorem.
+ </p>
+
+</section>
+
+</body>
+</html>

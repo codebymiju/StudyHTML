@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>formtest</title>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<h1>ITWILL 회원가입</h1>
+	<form action="test.jsp" method="get">
+		<p>
+		<label><input type="text" readonly="readonly" value ="자바(JAVA)개발자 양성">과정</label><br>
+		</p>
+ 		<fieldset>
+		  <legend>[ 필수 입력 ]</legend>
+		  <p>
+			  <label for="name">♣ 이름 <input type="text" id="name" autofocus="autofocus" required="required"></label><br>
+			  <label for="id">♣ 아이디 <input type="text" placeholder="6~10자 영문과 숫자 조합" id="id" required="required"></label><br>
+			  <label for="passwd">♣ 비밀번호 <input type="text" placeholder="8~12자 영문, 숫자, 특수문자" id="passwd" required="required"></label>
+		  </p>
+		  <p> ♣ 성별<br>
+				<input type="radio" name="gender">남<br>
+				<input type="radio" name="gender" checked="checked">여 <br>
+				<input type="radio" name="gender">기타
+		  </p>
+		  
+		  <p>
+		 	 <label>♣ 생년월일 <input type="date"></label><br>
+		 	 <label>♣ 전화번호 <input type="tel" placeholder="(예시) 010-777-8888"></label><br>
+		 	 <label>♣ email <input type="email"></label>
+		  </p>
+		  <hr>
+		  	 ♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까?
+		   <p>
+			   <input type="radio" name="answer" checked="checked">받습니다<br>
+			   <input type="radio" name="answer">받지 않겠습니다<br>
+		  </p>
+		   <p>
+			   ♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+			   <input type="checkbox" checked="checked">이메일
+			   <input type="checkbox" >문자
+			   <input type="checkbox" checked="checked">카카오톡
+			   <input type="checkbox" >우편
+		   </p>
+		</fieldset> <br><br>
+		<fieldset>
+		 <legend>[ 선택 입력]</legend>
+		 <p>♣ 자기소개를 해주세요<br>
+		 <textarea rows="10" cols="80" placeholder="간단히 작성하세요"></textarea>
+		 </p>
+		 <p>
+		  <label>♣ 블로그 주소 <input type="url"></label><br>
+		 </p>
+		 <p>
+		 ♣ 학과를 선택해주세요<br>
+		  <select>
+			   <option>컴퓨터공학과</option>
+			   <option selected>산업공학과</option>
+			   <option>기계공학과</option>
+			   <option>화학공학과</option>
+			   <option>전기전자공학과</option>
+			   <option>건축공학과</option>
+		  </select>
+		 </p>
+		
+		 <p>
+		   ♣ 취미, 특기를 선택해주세요<br>
+		  <select multiple="multiple">
+		  <optgroup label="취미">
+			   <option>등산</option>
+			   <option>여행</option>
+			   <option selected>요리</option>
+			   <option>게임</option>
+		  </optgroup>
+		  <optgroup label="특기">
+			   <option>운동</option>
+			   <option selected>바둑</option>
+			   <option>음악</option>
+			   <option>무용</option>
+		  </optgroup>
+		  </select>
+		 </p>
+		</fieldset>
+		<p>
+			<input type="submit" value = "가입">
+		 	<input type="reset" value = "취소">	
+		</p>
+	</form>
+</body>
+</html>

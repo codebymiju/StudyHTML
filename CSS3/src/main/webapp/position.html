@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet"> 
+</head>
+<body>
+<h1>position - 요소의 위치 지정법</h1>
+<ol>
+ <li>position:static; (기본값) 위치 고정</li>
+ <li>position:relative; 현재 위치에서 ~지정</li>
+ <li>position:absolute; 상위요소를 기준으로 ~지정</li>
+ <li>position:fixed; 브라우저를 기준으로 ~고정</li>
+ <li>position:sticky; relative와 fixed의 믹스 효과</li>
+</ol>
+
+<h2>방향별 거리값 지정</h2>
+<ul>
+ <li>left:n;</li>
+ <li>right:n;</li>
+ <li>top:n;</li>
+ <li>bottom:n;</li>
+</ul>
+
+<section id="sec01">
+ <h2>1. position:static; (기본값) 위치 고정 </h2>
+ <div>position:static; <br>left:500px; </div>
+</section>
+
+<section id="sec02">
+ <h2>2.position:relative; 현재 위치에서 ~지정</h2>	
+
+ <div class="re01">position:relative;<br>left: 500px; </div>
+ <div class="re02">position:relative;<br>right: 220px; </div>
+ <div class="re03">position:relative;<br>top: 200px;</div>
+ <div class="re04">position:relative;<br>bottom: 200px;</div>
+ <div class="re05">position:relative;<br>left: 800px;
+bottom: 250px;</div>
+ <div class="re06">position:relative;<br> </div>
+ <div class="re07"> move</div>
+</section>
+
+<section id="sec03">
+ <h2>3. position:absolute; 상위요소를 기준으로 ~지정
+   <i>기준이 될 상위요소는 position: relative;로 설정</i>
+ </h2>
+
+ <div class="ab01">position:absolute;<br>left: 500px;</div>
+ <div class="ab02">position:absolute;<br>right: 200px;</div>
+ <div class="ab03">position:absolute;<br>top:10px;</div>
+ <div class="ab04">position:absolute;<br>bottom:50px;</div>
+
+ <aside id="card-box">
+  <div class="card01">card01</div>
+  <div class="card02">card02</div>
+  <div class="card03">card03</div>
+  <div class="card04">card04<br>  
+   <img src="img/png/monster.png"
+   width="100px">
+  </div>
+ </aside>
+ 
+
+</section>
+
+ <aside id="round-box">
+  <div class="round01">
+   <h3>round01</h3>
+   <div class="cir"> </div>  
+  </div>
+  <div class="round02">
+   <h3>round02</h3>
+   <div class="cir"> </div>
+  </div>
+  <div class="round03">
+   <h3>round03</h3>
+   <div class="cir"> </div>
+  </div>
+  <div class="round04">
+   <h3>round04</h3>
+   <div class="cir"> </div>
+  </div>
+ </aside>
+
+</body>
+</html>

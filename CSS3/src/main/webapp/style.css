@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* style.css */
+/* ctrl + c : 주석단축키 */
+body{line-height: 1.65;}
+
+h1 {border-left:12px solid #5af;
+ border-right:12px solid #5af;
+ background-color: #36d; 
+ padding:0.3em 0.7em;
+ color: #fff;}
+ 
+ section {border: 3px solid #ccc;
+ margin: 4em 1em;
+ padding: 1em;}
+
+ section>h2 {
+ border-bottom: 4px dashed #ccc;
+ color: #555;}

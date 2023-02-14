@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+ /* nav */
+
+nav>ul>li /* nav li */ {
+  /*  border: 1px solid; */
+ display: inline-block /* 
+  메뉴들을 나란히 배치 - 가로 메뉴형 */;
+ width: 200px;
+ text-align: center;
+ font-size: 1.2em;
+ font-weight: bold; }
+
+nav a {border: 1px solid;
+  width: 200px;
+  display:block  /* 
+  링크구역을 넓힘(원래 크기 적용 불가임) */;
+  text-decoration: none;}
+
+nav a:link, nav a:visited {
+	/* ... */
+	background-color: #480; 
+	color: #ccc;
+}
+
+nav a:hover, nav a:active {
+	/* ... */
+	background-color: #ccc;
+	color: #480;
+	transition:0.6s;
+}
+
+
+#sec01, #sec02 {
+ display: inline-block ;	
+ vertical-align: top
+ /* inline인 요소끼리의 수직정렬
+  (테이블의 셀 내에서는 셀 내용의 수직정렬을
+  지정할 수 있음) */;}
+ 
+
+  /* 1. display:inline; */
+
+/* #sec01>p, #sec01>div, #sec01>aside */
+#sec01>*:not(h2) 
+ /* A:not(B) A중에서 B만 제외하고 
+  불러오는 부정선택자 */{
+	border: 1px solid #f00;
+	width: 100px; height:50px;
+	margin: 20px;
+	display: inline; } 
+
+#sec01:hover>*:not(h2) {
+ display: block;}
+
+
+ 
+ /* 2.  display:block; */
+
+#sec02>*:not(h2) {
+border: 1px solid #00f;
+width: 100px; height: 30px;
+margin: 20px;
+display: block; }
+ 
+ 
+ 
+#sec02:hover>*:not(h2) {
+ display: inline;}
+ 
+ 
+ /* 3. display:inline-block; */
+#sec03>*:not(h2) {
+	border: 1px solid #d0d;
+	width: 100px; height: 30px;
+	margin: 20px;
+	display: inline-block;}
+
+
+#sec04, #sec05 {
+ display: inline-block;
+ vertical-align: top;}
+
+ /* 4. display:none; */
+#sec04>*:not(h2) {
+	border: 1px solid #dd0;}
+
+#sec04>div {background-color: #aad;
+display: none;}
+
+#sec04>p:hover+div
+ /* A+B는 A의 바로 뒤에 오는 형제관계인 B만
+ 불러오는 인접형제선택자 */ {
+  display:block; }
+
+/* 
+#sec04>p:hover~aside
+ A~B는 A의 뒤에 오는 모든 형제관계인 B를
+ 불러오는 형제선택자 {
+ background-color: #000; }
+ */
+#sec04>a {background-color: #aad;
+display: none;}
+
+#sec04:hover>a {
+display: inline;}
+
+
+ /* 5. visibility:hidden; */
+
+#sec05>div {
+background-color: #5a0;
+visibility: hidden;	 }
+
+#sec05>p:hover+div {
+visibility: visible; }
+
+
+#sec05>a {
+background-color: #5a0;	
+visibility: hidden; }
+
+#sec05:hover>a {
+visibility: visible;}
